@@ -1,0 +1,26 @@
+<script link="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<html>
+  <head></head>
+  <body>
+    <a href="#" id="myCustomTrigger">Click here</a>
+  </body>
+</html>
+
+<script type="text/javascript" src="http://192.168.0.181:8080/s/1a1cf0e736f312f307d5dac206b79ece-T/pt_BR-djcrc1/70114/b6b48b2829824b869586ac216d119363/2.0.8/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=pt-BR&collectorId=6d34d06e"></script>
+
+<script type="text/javascript">
+  window.ATL_JQ_PAGE_PROPS = {
+    triggerFunction: function(showCollectorDialog) {
+      //Requires that jQuery is available!
+      jQuery('#myCustomTrigger').click(function(e) {
+        e.preventDefault()
+        showCollectorDialog()
+      })
+
+      jQuery(window).load(function() {
+        showCollectorDialog()
+      })
+    }
+  }
+</script>
